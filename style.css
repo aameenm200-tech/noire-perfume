@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background-color: #0A0A0A;
+    height: 900px;;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px;
+    background-color: black;
+    color: #D4AF6A;
+    box-shadow: 0 5px 8px rgba(249, 233, 12, 0.548);
+}
+
+.navlogo {
+    width: 100px;
+    height: 50px;
+}
+
+.navlnks {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.link {
+    text-decoration: none;
+    color: #D4AF6A;
+}
+
+.links {
+    list-style: none;
+}
+.link:hover{
+    color:#F1E8D8 ;
+}
+
+.carticon {
+    color: #D4AF6A;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* banner */
+
+.banner {
+    background-image: url('./images/banner.png');
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding-left:100px;
+}
+
+.bannercontent {
+    color: #D4AF6A;
+
+}
+
+.bannerhead {
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.bannertitle {
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.explorebtn{
+    height: 50px;
+    width: 200px;
+    padding: 0px 10px;
+    background: transparent;
+    color: #D4AF6A;
+    border: solid 1px;
+    border-color: #D4AF6A;
+    border-radius: 20px;
+    transition: 1s ease;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.explorebtn:hover{
+    background-color: #C9A45C;
+    color: black;
+    border-color: black;
+    transform: scale(1.1);
+}
