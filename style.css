@@ -17,12 +17,23 @@ body {
     padding: 5px 50px;
     background-color: black;
     color: #D4AF6A;
-    box-shadow: 0 5px 8px rgba(249, 233, 12, 0.548);
+    box-shadow: 0 1px 10px rgba(249, 233, 12, 0.548);
 }
 
 .navlogo {
     width: 100px;
     height: 50px;
+}
+#check{
+    display: none;
+}
+.icons{
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 1%;
+
 }
 
 .navlnks {
@@ -64,7 +75,6 @@ body {
 
 .bannercontent {
     color: #D4AF6A;
-
 }
 
 .bannerhead {
@@ -156,4 +166,46 @@ body {
     color: #0A0A0A;
     background-color: rgb(212, 175, 106);
     transform: scale(1.1);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/* Responsive */
+
+@media (max-width:768px){
+    .navlnks{
+        display: none;
+        position: absolute;
+        top: 10%;
+        left: 0px;
+        width: 100% ;
+        background-color: #0a0a0abd;
+        backdrop-filter: blur(10px);
+    }
+    .carticon{
+        display: none;
+    }
+    .icons{
+        display: flex;
+    }
+    #closeicon{
+        display: none;
+    }
+    #check:checked~.icons #menuicon{
+        display: none;
+    }
+    #check:checked~.icons #closeicon{
+        display: flex;
+    }
+    #check:checked~.navlnks{
+        display: block;
+        height: fit-content;
+    }
+    .links{
+        text-align: center;
+        padding: 10px 0px;
+    }   
 }
