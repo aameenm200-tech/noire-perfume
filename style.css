@@ -7,7 +7,8 @@
 body {
     font-family: "DM Sans", sans-serif;
     background-color: #0A0A0A;
-    height: 900px;;
+    height: 900px;
+    ;
 }
 
 .navbar {
@@ -24,10 +25,12 @@ body {
     width: 100px;
     height: 50px;
 }
-#check{
+
+#check {
     display: none;
 }
-.icons{
+
+.icons {
     display: none;
     font-size: 25px;
     cursor: pointer;
@@ -50,8 +53,9 @@ body {
 .links {
     list-style: none;
 }
-.link:hover{
-    color:#F1E8D8 ;
+
+.link:hover {
+    color: #F1E8D8;
 }
 
 .carticon {
@@ -70,7 +74,7 @@ body {
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr;
-    padding-left:100px;
+    padding-left: 100px;
 }
 
 .bannercontent {
@@ -87,7 +91,8 @@ body {
     padding-bottom: 20px;
     font-size: 20px;
 }
-.explorebtn{
+
+.explorebtn {
     height: 50px;
     width: 200px;
     padding: 0px 10px;
@@ -100,58 +105,73 @@ body {
     font-size: 15px;
     margin-top: 10px;
 }
-.explorebtn:hover{
+
+.explorebtn:hover {
     background-color: rgb(212, 175, 106);
     color: black;
     border-color: black;
     transform: scale(1.1);
 }
+
+/* .btnlink{
+    text-decoration: none;
+    color: #D4AF6A;
+}
+.btnlink:hover{
+    color: #0A0A0A;
+} */
 /* PRODUCT CARDS */
 
-.producthead{
+.producthead {
     color: #D4AF6A;
     text-align: center;
     padding: 20px 8% 10px 8%;
     font-family: "Cormorant Garamond", serif;
     font-size: 40px;
 }
-.productcards{
+
+.productcards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-.cards{
+
+.cards {
     width: 300px;
     padding: 15px;
     gap: 30px;
-    background-color:#0A0A0A;
+    background-color: #0A0A0A;
     border: solid 1px #D4AF6A;
     border-radius: 15px;
     margin: 20px 20px;
     transition: 0.5s ease;
 }
-.cards:hover{
+
+.cards:hover {
     box-shadow: 0px 1px 8px rgba(212, 175, 106, 0.800);
     transform: translateY(-15px);
 }
-.productimg{
+
+.productimg {
     width: 100%;
     height: 280px;
     margin-bottom: 10px;
     border-radius: 15px;
 }
-.productname, .productprice {
+
+.productname,
+.productprice {
     color: #D4AF6A;
     padding: 10px 10px;
     font-family: "Cormorant Garamond", serif;
     font-size: 25px;
 }
 
-.buynow{
+.buynow {
     background-color: transparent;
     color: rgb(212, 175, 106);
-    
+
     border: solid 1px #5c4525;
     border-radius: 15px;
     padding: 10px 20px;
@@ -162,12 +182,67 @@ body {
     font-family: "Cormorant Garamond", serif;
     transition: 1s;
 }
-.buynow:hover{
+
+.buynow:hover {
     color: #0A0A0A;
     background-color: rgb(212, 175, 106);
     transform: scale(1.1);
 }
-html{
+
+/* about us */
+
+.aboutus {
+    font-family: "Cormorant Garamond", serif;
+}
+
+.aboutmain {
+    background-image: url(./images/about\ banner.png);
+    background-position: center;
+    padding: 30px 8% 30px 8%;
+    margin: 30px 30px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.abouthead {
+    color: #D4AF6A;
+    font-size: 50px;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.abouttitle {
+    color: #D4AF6A;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.aboutpara {
+    color: #F1E8D8;
+    font-size: 25px;
+}
+
+.footer {
+    color: #D4AF6A;
+    background-color: #5c4525;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -175,37 +250,44 @@ html{
 
 /* Responsive */
 
-@media (max-width:768px){
-    .navlnks{
+@media (max-width:768px) {
+    .navlnks {
         display: none;
         position: absolute;
         top: 10%;
         left: 0px;
-        width: 100% ;
+        width: 100%;
         background-color: #0a0a0abd;
         backdrop-filter: blur(10px);
     }
-    .carticon{
+
+    .carticon {
         display: none;
     }
-    .icons{
+
+    .icons {
         display: flex;
     }
-    #closeicon{
+
+    #closeicon {
         display: none;
     }
-    #check:checked~.icons #menuicon{
+
+    #check:checked~.icons #menuicon {
         display: none;
     }
-    #check:checked~.icons #closeicon{
+
+    #check:checked~.icons #closeicon {
         display: flex;
     }
-    #check:checked~.navlnks{
+
+    #check:checked~.navlnks {
         display: block;
         height: fit-content;
     }
-    .links{
+
+    .links {
         text-align: center;
         padding: 10px 0px;
-    }   
+    }
 }
