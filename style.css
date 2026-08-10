@@ -113,13 +113,6 @@ body {
     transform: scale(1.1);
 }
 
-/* .btnlink{
-    text-decoration: none;
-    color: #D4AF6A;
-}
-.btnlink:hover{
-    color: #0A0A0A;
-} */
 /* PRODUCT CARDS */
 
 .producthead {
@@ -141,7 +134,7 @@ body {
     width: 300px;
     padding: 15px;
     gap: 30px;
-    background-color: #0A0A0A;
+    background-color: black;
     border: solid 1px #D4AF6A;
     border-radius: 15px;
     margin: 20px 20px;
@@ -171,7 +164,6 @@ body {
 .buynow {
     background-color: transparent;
     color: rgb(212, 175, 106);
-
     border: solid 1px #5c4525;
     border-radius: 15px;
     padding: 10px 20px;
@@ -197,7 +189,8 @@ body {
 
 .aboutmain {
     background-image: url(./images/about\ banner.png);
-    background-position: center;
+    background-position: bottom;
+    background-size: cover;   
     padding: 30px 8% 30px 8%;
     margin: 30px 30px;
     border-radius: 20px;
@@ -218,7 +211,7 @@ body {
 
 .abouthead {
     color: #D4AF6A;
-    font-size: 50px;
+    font-size: 40px;
     padding: 10px 0px;
     text-align: center;
 }
@@ -233,7 +226,71 @@ body {
     color: #F1E8D8;
     font-size: 25px;
 }
+.contactus{
+    color: #D4AF6A;
+    font-family: "Cormorant Garamond", serif;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 40px;
+}
 
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    color: #F1E8D8;
+    padding: 20px 30px;
+    margin: 20px opx;
+}
+.contacthead{
+    color: #D4AF6A;
+    padding: 15px 0px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 40px;
+}
+.contactpara{
+    padding: 10px 0px;
+    font-size: 20px;
+}
+.contactform{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    
+}
+.formhead{
+    color: #D4AF6A;
+    padding: 15px 0px;
+    margin-right: 50px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 40px;
+    
+}
+.textbox{
+    padding: 10px 10px;
+    margin: 10px 0px;
+    width: 300px;
+    border-radius: 10px;
+}
+.sendbutton{
+    background-color: transparent;
+    color: rgb(212, 175, 106);
+    border: solid 1px #5c4525;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin-right: 80px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Cormorant Garamond", serif;
+    transition: 1s;
+    
+}
+.sendbutton:hover {
+    color: #0A0A0A;
+    background-color: rgb(212, 175, 106);
+    transform: scale(1.1);
+}
 .footer {
     color: #D4AF6A;
     background-color: #5c4525;
@@ -290,4 +347,5 @@ html {
         text-align: center;
         padding: 10px 0px;
     }
+    
 }
